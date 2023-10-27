@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+}
+  
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #1F2039;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+header a{
+    background-color: #A4A6B1;
+    color: #1F2039;
+    text-decoration: none;
+    padding: 10px 70px;
+    font-weight: 600;
+}
+
+.boutonGauche{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.boutonDroite{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.logoLinkedin{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+h1{
+    color: #A4A6B1;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.titreOnglet{
+    margin-left: 100px;
+}
+
+.basket{
+    height: 350px;
+    position: absolute;
+    left: 250px;
+    bottom: 90px;
+}
+
+.guitare{
+    height: 300px;
+    position: absolute;
+    left: 810px;
+    bottom: 230px;
+}
+
+.lecture{
+    height: 200px;
+    position: absolute;
+    left: 550px;
+    bottom: 180px;
+}
+
+.ski{
+    height: 250px;
+    position: absolute;
+    right: 45px;
+    bottom: 110px;
+}
+
+.avion{
+    height: 120px;
+    position: absolute;
+    right: 160px;
+    bottom: 420px;
+}
