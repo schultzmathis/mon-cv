@@ -68,7 +68,12 @@ footer{
     position: relative;
 }
 
-
+.logoDownload{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    position: relative;
+}
 
 h1{
     color: #A4A6B1;
