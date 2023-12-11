@@ -44,6 +44,7 @@ footer{
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    margin-top: 10px;
 }
 
 .logoLinkedin{
@@ -66,37 +67,48 @@ h1{
     margin-left: 100px;
 }
 
-.handball{
-    height: 350px;
-    position: absolute;
-    left: 250px;
-    bottom: 90px;
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.moto{
-    height: 300px;
-    position: absolute;
-    left: 810px;
-    bottom: 230px;
+.image-container {
+    position: relative;
+    width: 100%;
 }
 
-.wei{
-    height: 200px;
-    position: absolute;
-    left: 550px;
-    bottom: 180px;
+.image-container img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-.japon{
-    height: 250px;
+.image-container::before {
+    content: attr(data-title);
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    right: 45px;
-    bottom: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1F2039;
+    color: white;
+    font-size: 100px;
+    padding: 16px 32px;
 }
 
-.avion{
-    height: 120px;
-    position: absolute;
-    right: 160px;
-    bottom: 420px;
+.image-container:hover img {
+    opacity: 0.3;
+}
+
+.image-container:hover::before {
+    opacity: 1;
 }

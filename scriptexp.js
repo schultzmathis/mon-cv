@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
           title: "Apprenti Conducteur de travaux en alternance",
           date: "Septembre 2022 à octobre 2024",
           company: "<a href='https://www.eurovia.fr'>Eurovia PACA</a> (13)",
-          mainText: "Formation au métier de chef de chantier, pour diriger une équipe, écrire des rapports, organiser les missions du chantier et garantir la qualité du travail. <br> Préparation en amont d'un chantier, budgétisation, négociation client et suivi.",
+          mainText: "Etude de marchées, budgétisation et négociation <br> Analyse des performances et rapports <br> Gestion d’un portefeuille de sous-traitants <br> Chef de chantier, gestion d’équipes et des procédés",
           images: [
-              "images/japon.jpeg",
-              "images/japon.jpeg",
-              "images/japon.jpeg"
+            "images/japon.jpeg",
+            "images/japon.jpeg",
+            "images/japon.jpeg"
           ]
       },
       {
-        title: "Apprenti Conducteur de travaux en alternance",
-        date: "Septembre 2022 à octobre 2024",
-        company: "<a href='https://www.eurovia.fr'>Eurovia PACA</a> (13)",
-        mainText: "Formation au métier de chef de chantier, pour diriger une équipe, écrire des rapports, organiser les missions du chantier et garantir la qualité du travail. <br> Préparation en amont d'un chantier, budgétisation, négociation client et suivi.",
+        title: "Enseignant d'anglais au Japon",
+        date: "Avril 2023 à Juillet 2024",
+        company: "<a href='https://free-is.org/grade/'>Funabashi International School</a> (Tokyo, Japon)",
+        mainText: "Professeur d’anglais durant 3 mois <br> Étude des méthodes managériales Japonaise <br> Découverte de la culture et de la langue : écrire, parler et savoir être",
         images: [
             "images/wei.jpeg",
             "images/wei.jpeg",
@@ -23,17 +23,27 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
     },
     {
-        title: "Apprenti Conducteur de travaux en alternance",
-        date: "Septembre 2022 à octobre 2024",
-        company: "<a href='https://www.eurovia.fr'>Eurovia PACA</a> (13)",
-        mainText: "Formation au métier de chef de chantier, pour diriger une équipe, écrire des rapports, organiser les missions du chantier et garantir la qualité du travail. <br> Préparation en amont d'un chantier, budgétisation, négociation client et suivi.",
+        title: "Manager évènementiel",
+        date: "Mars 2022 à Mars 2023",
+        company: "<a> Union Des Associations</a> (13)",
+        mainText: "Superviseur des évènements Centraliens <br> Gestion de la planification <br> Participation aux commissions stratégiques",
         images: [
             "images/wei.jpeg",
             "images/wei.jpeg",
             "images/wei.jpeg"
         ]
     },
-      // Add more experiences as needed
+    {
+        title: "Responsable du Weekend d'Intégration",
+        date: "Janvier 2022 à janvier 2023",
+        company: "<a> Bureau Des Élèves</a> (13)",
+        mainText: "Travail en équipe <br> Encadrement de 500 personnes",
+        images: [
+            "images/wei.jpeg",
+            "images/wei.jpeg",
+            "images/wei.jpeg"
+        ]
+    },
   ];
 
   const experienceContainer = document.getElementById('experienceContainer');
@@ -71,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
       showExperience(currentIndex);
   }
 
-  // Display the first experience on page load
+
   showExperience(currentIndex);
 
-  // Add event listeners to navigation buttons
+
   nextExperienceBtn.addEventListener('click', showNextExperience);
   prevExperienceBtn.addEventListener('click', showPrevExperience);
 });

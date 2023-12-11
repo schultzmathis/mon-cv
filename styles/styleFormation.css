@@ -5,17 +5,7 @@
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: #1F2039;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
 }
-
-main {
-    flex: 1; /* This makes the main content expand to fill the available space */
-}
-
-
 
 header{
     display: flex;
@@ -92,79 +82,68 @@ h1{
 .frise:after{
     content: "";
     position: absolute;
-    left: 35px;
-    right: 35px;
-    top: 50%;
-    height: 8px;
+    top: 15px;
+    bottom: 15px;
+    left: 50%;
+    width: 8px;
     background: #A4A6B1;
     border-radius: 3px;
     z-index: 1;
-    transform: translateY(-50%);
+}
+
+.detail {
+    font-size: smaller;
 }
 
 .frise article{
-    display: inline-block;
     position: relative;
-    background: #A4A6B1;
-    width: auto;
-    height: 75px;
-    padding: 10px;
-    margin: 0 0 50px 80px;
-    vertical-align: top;
+    background-color: #A4A6B1;
+    width: calc( 50% - 70px );
+    padding: 15px;
     border-radius: 15px;
-    text-align: center;
 }
 
-.frise article:not(:first-child){
-    margin-left: -20px;
-}
-
-.frise article:not(:last-child){
-    margin-right: -20px;
+.frise article + article{
+    margin-top: -20px;
 }
 
 .frise article:before{
-    content: "";
+    content:"";
     display: block;
     position: absolute;
-    top: calc( 100% + 14px );
-    left: 50%;
-    background: #A4A6B1;
-    width: 16px;
-    height: 16px;
+    top: 40%;
+    right: -57px;
+    background-color: #A4A6B1;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
-    transform: translateX(-50%);
     z-index: 2;
 }
 
 .frise article:after {
-    content: "";
+    content:"";
     position: absolute;
-    top: calc( 100% - 10px );
-    left: 50%;
+    top: 34%;
+    right: -15px;
     width: 0;
     height: 0;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 20px solid #A4A6B1;
-    transform: translateX(-50%);
+    border-top: 20px solid transparent;
+    border-left: 16px solid #A4A6B1;
+    border-bottom: 20px solid transparent;
 }
-  
+
 .frise article:nth-child(even) {
-    margin-top: 140px;
-    margin-bottom: 0;
+    margin-left: calc( 50% + 48px );
 }
 
 .frise article:nth-child(even):before {
-    top: auto;
-    bottom: calc( 100% + 14px );
+    left: auto;
+    right: calc( 100% + 31px );
 }
 
 .frise article:nth-child(even):after {
-    top: -10px;
-    bottom: 100%;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-bottom: 20px solid #A4A6B1;
-    border-top: none;
+    left: auto;
+    right: 100%;
+    border-left: none;
+    border-right: 16px solid #A4A6B1;
 }

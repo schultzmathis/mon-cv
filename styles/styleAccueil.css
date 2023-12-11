@@ -34,6 +34,10 @@ a{
     color: #A4A6B1;
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
 .boutonGauche{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -56,15 +60,15 @@ footer{
     align-items: center;
 }
 
+
 .logoLinkedin{
     height: 40px;
     width: 40px;
     margin-right: 20px;
+    position: relative;
 }
 
-a:hover {
-    opacity: 0.5;
-}
+
 
 h1{
     color: #A4A6B1;
