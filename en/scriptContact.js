@@ -1,5 +1,5 @@
 function afficherEmail(nom, entreprise, email) {
-    let mailto = `mailto:mathis.schultz@centrale-med.fr?subject=Offre d'emploi&body=Bonjour, je suis ${nom} de l'entreprise ${entreprise} et je suis intéressé par ton profil pour une mission. Tu peux me recontacter pour en savoir plus à l'adresse ${email}`
+    let mailto = `mailto:mathis.schultz@centrale-med.fr?subject=Offre d'emploi&body=Hello, My name is ${nom} from the company ${entreprise} and I am interresseted in your profile for a mission, please contact me on this mail : ${email}`
     location.href = mailto
 }
 
